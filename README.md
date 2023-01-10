@@ -74,16 +74,6 @@ Cách check log khi dispatch action :
     - Check action and reducer của API trong folder: src/store/api 
 ```
 
-Codepush command
-```
-    IOS:
-    - appcenter codepush release-react -a binhchili/Printerval -d Staging -t '*'
-    - appcenter codepush release-react -a binhchili/Printerval -d Production -t '>=1.1.4' (latest version)
-
-    ANDROID:
-    - appcenter codepush release-react -a binhchili/Printerval-1 -d Staging -t '*'
-    - appcenter codepush release-react -a binhchili/Printerval-1 -d Production -t '>=1.1.4'
-```
 <br/>
 <br/>
 Credit by binhchili <br/>
