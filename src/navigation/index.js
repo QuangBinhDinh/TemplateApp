@@ -12,12 +12,13 @@ import {
     BottomMsgService,
     Dialog,
     DialogService,
+    getCustomTheme,
 } from '../components';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import SplashScreen from '../Splash';
 import OptionAddress from '@components/OptionAddress';
 import OptionAddressService from '@components/OptionAddress/OptionAddressService';
-import { getCustomTheme } from '../components';
+
 const Stack = createStackNavigator();
 
 const Router = () => {

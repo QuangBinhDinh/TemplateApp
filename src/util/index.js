@@ -7,7 +7,7 @@ import { DialogService } from '@components/index';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
-const formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+// const formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
 
 /**
  * Hàm chuyển đổi url ảnh để scale
@@ -84,11 +84,11 @@ const createSuffixParam = (prefix, params) => {
     } else return '';
 };
 
-const formatPrice = priceNum => {
-    let localePrefix = '$';
-    if (isNumber(priceNum)) return formatter.format(priceNum);
-    else return localePrefix + priceNum;
-};
+// const formatPrice = priceNum => {
+//     let localePrefix = '$';
+//     if (isNumber(priceNum)) return formatter.format(priceNum);
+//     else return localePrefix + priceNum;
+// };
 
 const showUnderDevelopment = (title = 'This feature is under development') => {
     DialogService.showDialog(
@@ -130,7 +130,7 @@ export {
     convertDateTime,
     ArrayTwoRow,
     createSuffixParam,
-    formatPrice,
+    // formatPrice,
     showUnderDevelopment,
     showTimeBefore,
 };
